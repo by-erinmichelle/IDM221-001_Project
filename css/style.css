@@ -1,0 +1,59 @@
+.header_logo {
+	text-align: left;
+}
+
+.header_title {
+	font-size: 3rem;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+nav {
+	text-align: right;
+	margin-top: 1rem;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li a {
+  color: #000000;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #767676;
+}
+
+.main_brand {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 4rem;
+}
+
+main {
+  padding: 4rem 0;
+}
+
+.previous_nav {
+	text-align:left;
+}
+
+.next_nav {
+	text-align: right;
+}
+
+.portfolio figure:hover,
+.portfolio figure.active {
+ 	color: #8FCFF3;
+}
+
+.footer {
+  background-color: #6F6F6F;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+}
