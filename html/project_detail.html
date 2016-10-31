@@ -13,32 +13,31 @@
 	<header>
 		<div class="container">
 			<div class="header_logo">
-				<img src="graphics/logo.jpg" alt="website logo">
+				<a href="index.html"> <img src="graphics/logo.jpg" alt="website logo"> </a>
 			</div>
 
 		<nav>
-		 <button class="hamburger">&#9776;</button>
-			<!--found on codepen-->
-			<div class="active">
-			<ul>
-	        <li><a href="about_me.html">About</a></li>
+				<div class="hamburger"></div>
+				<div class="active">
+				<ul class="ff-regular">
+		        <li class="nav-item"><a href="about_me.html">About</a></li>
 
-	         	<ul>
-	         		<li><a href="resume.html">Resume</a></li>
-	         	</ul>
+		         	<ul>
+		         		<li class="nav-item"><a href="resume.html">Resume</a></li>
+		         	</ul>
 
-	        <li><a href="portfolio.html">Portfolio</a></li>
+		        <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
 
-	        	<ul>
-	        		<li><a href="graphics.html">Graphic</a></li>
-	        		<li><a href="photography.html">Photography</a></li>
-	        		<li><a href="art.html">Art</a></li>
-	        		<li><a href="animation.html">Animation</a></li>
-	        		<li><a href="video.html">Video</a></li>
-	        	</ul>
+		        	<ul>
+		        		<li class="nav-item"><a href="graphics.html">Graphic</a></li>
+		        		<li class="nav-item"><a href="photography.html">Photography</a></li>
+		        		<li class="nav-item"><a href="art.html">Art</a></li>
+		        		<li class="nav-item"><a href="animation.html">Animation</a></li>
+		        		<li class="nav-item"><a href="video.html">Video</a></li>
+		        	</ul>
 
-	        <li><a href="contact.html">Contact</a></li>
-	    </ul>
+		        <li class="nav-item"><a href="contact.html">Contact</a></li>
+		    </ul>
 	    </div>
 
 		</nav>
@@ -49,43 +48,46 @@
 		<div class="container">
 
 				<div class="previous_nav">
-					<p>previous</p>
+					<p class="ff-regular">previous</p>
 				</div>
 				<div class="next_nav">
-					<p>next</p>
+					<p class="ff-regular">next</p>
 				</div>
 			
 
-		<h1>Project Name</h1>
-		<p>Description of project. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		<h1 class="ff-bold">3D Model of a Toaster</h1>
+		<div class="ff-regular">
+		<p class="text">Description of project. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
 		<p>
-		<img src="" alt=""> <!--project image will go here-->
+		<img src="../animation/toaster1.jpg" alt="3d model toaster"> <!--project image will go here-->
 		</p> 
-		<h2>Tools Used</h2>
-		<ul>
-				<li>Tool 1</li> 
-				<li>Tool 2</li>
+		<h2 class="ff-bold">Tools Used</h2>
+		<ul class="ff-regular">
+				<li>Maya</li> 
+				<li>Photoshop</li>
 				<li>Tool 3</li>
 				<li>Tool 4</li>
 				<li>Tool 5</li>
 		</ul>
-		<p>
-		<img src="" alt=""> <!--thumbnail images of project here-->
+		<p class="thumbnail">
+		<img src="../animation/toaster2.jpg" alt="side toaster">
+		<img src="../animation/toaster3.jpg" alt="toaster in kitchen"> <!--thumbnail images of project here-->
 		</p>
-		<div class="header_title">
-			<h3>Relevant Work</h3>
+		<div class="relevant">
+			<h1 class="ff-bold">Relevant Work</h1>
 		</div>
 	      <div class="portfolio">
 	        <div class="row">
 	          <div class="col">
 	          	<div class="active">
 		            <figure>
-		              	<img src="" alt=""> <!--relevant work will go here--> 
+		              	<img src="../animation/shapes.gif" alt="gif"> <!--relevant work will go here--> 
 		            </figure>
 		          </div>
 		          <div class="col">
@@ -136,14 +138,14 @@
 		<div class="container">
 			<div class="footer">
 
-					<p>© 2016 Erin Wiegman 
-					<a href="https://www.facebook.com/erin.wiegman"> <img src="https://worldvectorlogo.com/logos/facebook-3.svg" alt="facebook logo"></a> 
+					<p class="ff-regular">&copy; 2016 Erin Wiegman 
+					<a href="https://www.facebook.com/erin.wiegman"> <img src="../graphics/facebook.png" alt="facebook logo"></a> 
 
-					<a href="https://www.behance.net/ErinWiegman"> <img src="http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/032013/behance-be-logo-01.png?itok=f91tvdCQ" alt="behnace logo"></a>
+					<a href="https://www.behance.net/ErinWiegman"> <img src="../graphics/behance.png" alt="behance logo"></a>
 
-					<a href="https://www.linkedin.com/in/erinwiegman"> <img src="https://grytics.com/wp-content/uploads/2015/01/1414386638_linkedin_circle_color-512.png" alt="linkedin logo"></a>
+					<a href="https://www.linkedin.com/in/erinwiegman"> <img src="../graphics/linkedin.png" alt="linkedin logo"></a>
 					</p>
-					<!--need to reduce logo image sizes & file sizes-->
+					<!--need to reduce logo image sizes & file sizes- update: reduced but need to match grays, possibly reduce more-->
 			</div>
 		</div>
 	</footer>

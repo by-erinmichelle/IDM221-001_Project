@@ -1,59 +1,128 @@
-.header_logo {
-	text-align: left;
+@font-face {
+    font-family: 'roboto_condensedbold';
+    src: url('../fonts/roboto_condensed/roboto-condensed.bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto_condensed/roboto-condensed.bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.header_title {
-	font-size: 3rem;
-	font-family: sans-serif;
-	text-align: center;
+.ff-bold {
+	font-family: 'roboto_condensedbold', Impact, Verdana, sans-serif;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/open_sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/open_sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.ff-regular {
+	font-family: 'open_sansregular', Arial, sans-serif;
+}
+
+ .image { 
+   position: relative; 
+   width: 100%;
+   text-align: center; /*not center on page*/
+  }
+
+.main_brand {
+  font-size: 80px; /*was 150px and then suddenly got too large..not sure if its because i changed the class*/
+  position: absolute;
+  top: 740px; /*not sitting center on image*/
+  width: 100%;
+  z-index: 2;
+  color: white;
+  text-align: center;
 }
 
 nav {
-	text-align: right;
+	text-align: left;
 	margin-top: 1rem;
+	padding-left: 1000px;
+  display: inline-block;
+
 }
 
-nav ul {
+.nav-item {		/*have to refresh pages because styles dont load automatically, dk why*/
 	list-style: none;
-}
-
-nav ul li a {
   color: #000000;
-  font-size: 2rem;
-  font-family: sans-serif;
-}
+  font-size: 35px;
+  font-weight: 600;
+} /*have to figure out how to hide items in hamburger menu*/
 
 nav ul li a:hover,
 nav ul li a.active {
   color: #767676;
 }
 
-.main_brand {
-	text-align: center;
-	font-family: sans-serif;
-	font-size: 4rem;
+.hamburger {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+/*found on https://www.sitepoint.com/pure-css-off-screen-navigation-menu/ */
+		z-index: 1;
 }
 
-main {
-  padding: 4rem 0;
+.header_logo {
+	text-align: left;
+}
+
+.header_title {
+	font-size: 40px;
+	text-align: center;
+} /*how do i display header title and logo inline/next to each other?*/
+
+.relevant  {
+  text-align:center;
+}
+
+h3 {
+  font-size: 25px;
+  text-align: left;
+}
+
+text {
+  font-size:20px;
+  line-height: 1.2;
+}
+
+main .image {
+  padding: 2rem;
 }
 
 .previous_nav {
-	text-align:left;
+	text-align: left;
+  position: absolute;
+  top: 3rem;
+  left: 1.3rem;
 }
 
 .next_nav {
 	text-align: right;
+  position: absolute;
+  top: 3rem;
+  right: 1.3rem;
 }
 
 .portfolio figure:hover,
 .portfolio figure.active {
- 	color: #8FCFF3;
+ 	color: #AE7FD1;
+}
+/*not working*/
+
+.thumbnail {
+  display: inline-block;
 }
 
 .footer {
-  background-color: #6F6F6F;
   padding-bottom: 2rem;
   text-align: center;
-  font-family: sans-serif;
+  color: #767676;
 }
