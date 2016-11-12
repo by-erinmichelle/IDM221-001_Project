@@ -3,7 +3,7 @@
 <head>
 
 	<title>Erin Michelle - About</title>
-	<link rel="stylesheet" type="text/css" href="https://github.com/necolas/normalize.css.git">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	
 </head>
@@ -24,36 +24,42 @@
 			<nav>
 				<div class="hamburger"></div>
 				<div class="active">
+				<div class="menu">
 				<ul class="ff-regular">
 		        <li class="nav-item"><a href="about_me.html">About</a></li>
 
-		         	<ul>
-		         		<li class="nav-item"><a href="resume.html">Resume</a></li>
+		         	<ul class="sub_nav-item">
+		         		<li><a href="resume.html">Resume</a></li>
 		         	</ul>
 
 		        <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
 
-		        	<ul>
-		        		<li class="nav-item"><a href="graphics.html">Graphic</a></li>
-		        		<li class="nav-item"><a href="photography.html">Photography</a></li>
-		        		<li class="nav-item"><a href="art.html">Art</a></li>
-		        		<li class="nav-item"><a href="animation.html">Animation</a></li>
-		        		<li class="nav-item"><a href="video.html">Video</a></li>
+		        	<ul class="sub_nav-item">
+		        		<li><a href="graphics.html">Graphic</a></li>
+		        		<li><a href="photography.html">Photography</a></li>
+		        		<li><a href="art.html">Art</a></li>
+		        		<li><a href="animation.html">Animation</a></li>
+		        		<li><a href="video.html">Video</a></li>
 		        	</ul>
 
 		        <li class="nav-item"><a href="contact.html">Contact</a></li>
-		        </ul>
-	    </div>
-
+		   		</ul>
+	    		</div> <!--end div active-->
+	    		</div><!--end div menu-->
 		</nav>
-		</div>
+		</div> <!--end div container-->
+	</header>
 	</header>
 
 	<main>
+		<div class="me">
 		<img src="../graphics/seniorphoto.png" alt="me">
+		</div>
+		<div class="about">
 		<h3 class="ff-bold">Hi, I'm Erin.</h3>
 		<div class="ff-regular">
-		<p class="text">I'm 19 years old and I was born and raised in San Diego, California. I decided to move to the east coast to be a student at Drexel University in Philadelphia, PA. I am currently in my sophomore year and majoring in Interactive Digital Media. I'm taking classes that focus on design as well as development of digital media, including web authoring, creative concept design, and user interface design. Outside of class, I work as the Graphic Design Assistant for Drexel's Performing Arts Department.
+		<div class="text">
+		<p>I'm 19 years old and I was born and raised in San Diego, California. I decided to move to the east coast to be a student at Drexel University in Philadelphia, PA. I am currently in my sophomore year and majoring in Interactive Digital Media. I'm taking classes that focus on design as well as development of digital media, including web authoring, creative concept design, and user interface design. Outside of class, I work as the Graphic Design Assistant for Drexel's Performing Arts Department.
 		</p>
 
  		<p>Other than being a digital designer, I am also a dancer. I started tap and jazz classes when I was 7 years old. Since then, I've had experience with modern, ballet, musical theatre, Afro-Cuban, Bollywood(my favorite!), hip-hop, Latin, and Irish. I was a member of the San Diego Civic Dance Company for two years before Drexel. Now, I am a member of the Drexel Dance Ensemble.
@@ -66,23 +72,24 @@
 		</p>
 
 		<p>View my Resume <a href="resume.html" target="_blank">here.</a></p>
+		</div><!--end div about-->
+		</div><!--end div text-->
 		</div>
 	</main>
 
 	<footer>
 		<div class="container">
-			<div class="footer">
+		
+					 <p class="social">
+					<a href="https://www.facebook.com/erin.wiegman"> <img src="../graphics/fb.png" alt="facebook logo"></a> 
 
-				<p class="ff-regular">&copy; 2016 Erin Wiegman 
-					<a href="https://www.facebook.com/erin.wiegman"> <img src="../graphics/facebook.png" alt="facebook logo"></a> 
+					<a href="https://www.behance.net/ErinWiegman"> <img src="../graphics/bh.png" alt="behance logo"></a>
 
-					<a href="https://www.behance.net/ErinWiegman"> <img src="../graphics/behance.png" alt="behance logo"></a>
-
-					<a href="https://www.linkedin.com/in/erinwiegman"> <img src="../graphics/linkedin.png" alt="linkedin logo"></a>
+					<a href="https://www.linkedin.com/in/erinwiegman"> <img src="../graphics/li.png" alt="linkedin logo"></a></p>
+					<p class="ff-regular">&copy; 2016 Erin Wiegman
 					</p>
-					<!--need to reduce logo image sizes & file sizes- update: reduced but need to match grays, possibly reduce more-->
+			
 			</div>
-		</div>
 	</footer>
 
 </body>

@@ -3,7 +3,7 @@
 <head>
 
 	<title>Portfolio - Detail</title>
-	<link rel="stylesheet" type="text/css" href="https://github.com/necolas/normalize.css.git">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 
 </head>
@@ -19,29 +19,31 @@
 		<nav>
 				<div class="hamburger"></div>
 				<div class="active">
+				<div class="menu">
 				<ul class="ff-regular">
 		        <li class="nav-item"><a href="about_me.html">About</a></li>
 
-		         	<ul>
-		         		<li class="nav-item"><a href="resume.html">Resume</a></li>
+		         	<ul class="sub_nav-item">
+		         		<li><a href="resume.html">Resume</a></li>
 		         	</ul>
 
 		        <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
 
-		        	<ul>
-		        		<li class="nav-item"><a href="graphics.html">Graphic</a></li>
-		        		<li class="nav-item"><a href="photography.html">Photography</a></li>
-		        		<li class="nav-item"><a href="art.html">Art</a></li>
-		        		<li class="nav-item"><a href="animation.html">Animation</a></li>
-		        		<li class="nav-item"><a href="video.html">Video</a></li>
+		        	<ul class="sub_nav-item">
+		        		<li><a href="graphics.html">Graphic</a></li>
+		        		<li><a href="photography.html">Photography</a></li>
+		        		<li><a href="art.html">Art</a></li>
+		        		<li><a href="animation.html">Animation</a></li>
+		        		<li><a href="video.html">Video</a></li>
 		        	</ul>
 
 		        <li class="nav-item"><a href="contact.html">Contact</a></li>
-		    </ul>
-	    </div>
-
+		   		</ul>
+	    		</div> <!--end div active-->
+	    		</div><!--end div menu-->
 		</nav>
-		</div>
+		</div> <!--end div container-->
+	</header>
 	</header>
 
 	<main>
@@ -55,19 +57,22 @@
 				</div>
 			
 
-		<h1 class="ff-bold">3D Model of a Toaster</h1>
-		<div class="ff-regular">
-		<p class="text">Description of project. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div class="project_title">
+			<h1 class="ff-bold">3D Model of a Toaster</h1>
 		</div>
-		<p>
-		<img src="../animation/toaster1.jpg" alt="3d model toaster"> <!--project image will go here-->
+		<div class="ff-regular">
+			<div class="detail">
+				<p class="text">Description of project. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div><!--end div detail-->
+		</div>
+
+		<p class="large_image">
+			<img src="../animation/toaster1.jpg" alt="3d model toaster"> <!--project image will go here-->
 		</p> 
-		<h2 class="ff-bold">Tools Used</h2>
+		<div class="tools">
+		<h2 class="ff-bold">
+		Tools Used
+		</h2>
 		<ul class="ff-regular">
 				<li>Maya</li> 
 				<li>Photoshop</li>
@@ -75,10 +80,21 @@
 				<li>Tool 4</li>
 				<li>Tool 5</li>
 		</ul>
-		<p class="thumbnail">
-		<img src="../animation/toaster2.jpg" alt="side toaster">
-		<img src="../animation/toaster3.jpg" alt="toaster in kitchen"> <!--thumbnail images of project here-->
-		</p>
+		</div><!--end div tools-->
+
+		<div class="row">
+			<div class="col">
+				<figure>
+					<img src="../animation/toaster2.jpg" alt="side toaster">
+				</figure>
+			</div>
+			<div class="col">
+				<figure>
+					<img src="../animation/toaster3.jpg" alt="toaster in kitchen"> <!--thumbnail images of project here-->
+				</figure>
+			</div>
+		</div><!--end div row-->
+
 		<div class="relevant">
 			<h1 class="ff-bold">Relevant Work</h1>
 		</div>
@@ -134,21 +150,21 @@
 	    </div>
 	</main>
 
-	<footer>
+<footer>
 		<div class="container">
-			<div class="footer">
+		
+					 <p class="social">
+					<a href="https://www.facebook.com/erin.wiegman"> <img src="../graphics/fb.png" alt="facebook logo"></a> 
 
-					<p class="ff-regular">&copy; 2016 Erin Wiegman 
-					<a href="https://www.facebook.com/erin.wiegman"> <img src="../graphics/facebook.png" alt="facebook logo"></a> 
+					<a href="https://www.behance.net/ErinWiegman"> <img src="../graphics/bh.png" alt="behance logo"></a>
 
-					<a href="https://www.behance.net/ErinWiegman"> <img src="../graphics/behance.png" alt="behance logo"></a>
-
-					<a href="https://www.linkedin.com/in/erinwiegman"> <img src="../graphics/linkedin.png" alt="linkedin logo"></a>
+					<a href="https://www.linkedin.com/in/erinwiegman"> <img src="../graphics/li.png" alt="linkedin logo"></a></p>
+					<p class="ff-regular">&copy; 2016 Erin Wiegman
 					</p>
-					<!--need to reduce logo image sizes & file sizes- update: reduced but need to match grays, possibly reduce more-->
+			
 			</div>
-		</div>
 	</footer>
+
 
 </body>
 </html>

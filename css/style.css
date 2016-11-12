@@ -1,3 +1,8 @@
+
+* { box-sizing: border-box; }
+
+/*FONTS*/
+
 @font-face {
     font-family: 'roboto_condensedbold';
     src: url('../fonts/roboto_condensed/roboto-condensed.bold-webfont.woff2') format('woff2'),
@@ -23,21 +28,40 @@
 	font-family: 'open_sansregular', Arial, sans-serif;
 }
 
- .image { 
-   position: relative; 
-   width: 100%;
-   text-align: center; /*not center on page*/
-  }
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+}
+
+img { max-width: 100%; 
+}
+
+.home_image { 
+  position: relative; 
+  width: 100%;
+  height: 100vh; 
+  background: url(../photography/home_page.jpg) no-repeat;   /*not center on page*/
+  background-size: cover;
+}
 
 .main_brand {
   font-size: 80px; /*was 150px and then suddenly got too large..not sure if its because i changed the class*/
   position: absolute;
+  margin-right: auto;
+  margin-left: auto;
   top: 740px; /*not sitting center on image*/
   width: 100%;
   z-index: 2;
   color: white;
   text-align: center;
 }
+
+
+/*HEADER*/
+
+
+/*attempting to figure out hovering for menu
 
 nav {
 	text-align: left;
@@ -47,17 +71,27 @@ nav {
 
 }
 
-.nav-item {		/*have to refresh pages because styles dont load automatically, dk why*/
-	list-style: none;
-  color: #000000;
-  font-size: 35px;
-  font-weight: 600;
-} /*have to figure out how to hide items in hamburger menu*/
-
 nav ul li a:hover,
 nav ul li a.active {
   color: #767676;
 }
+
+.nav-item{
+  opacity: 0;
+}
+
+.nav-item {
+  opacity: 0;
+}
+
+
+.hamburger:hover {
+  opacity: 1; /*works but theyre showing up off screen
+} 
+
+nav-item:hover {
+  opacity: 1;
+}*/
 
 .hamburger {
     position: fixed;
@@ -70,8 +104,48 @@ nav ul li a.active {
 		z-index: 1;
 }
 
+.menu {
+  opacity: 0;
+  margin-top: 3rem; 
+  padding-right: 1rem;
+  padding-left: 1005px;
+  text-align: left;
+  color: black;
+}
+
+.menu:hover {
+  opacity: 1;
+}
+
+.nav-item {  
+  font-size: 36px;
+  font-weight: 600;
+  list-style: none;
+  line-height: 3rem;
+} /*have to figure out how to hide items in hamburger menu*/
+
+.sub_nav-item {
+  font-size: 26px;
+  font-weight: 600;
+  list-style: none;
+  line-height: 2rem;
+}
+
+.menu ul li a:link {
+  color: black; 
+  text-decoration: none;
+}
+
+.menu ul li a:visited {
+  color:#AE7FD1;
+}
+
+.menu ul li a:hover {
+  color: #767676;
+}
+
 .header_logo {
-	text-align: left;
+	text-align: left
 }
 
 .header_title {
@@ -79,23 +153,87 @@ nav ul li a.active {
 	text-align: center;
 } /*how do i display header title and logo inline/next to each other?*/
 
+
+/*MAIN*/
+
+.portfolio .row .col {
+  float: left;
+  /*width: 33.3%;
+  width: calc(100%/3);
+   width: ? unsure*/
+}
+
+figure {
+  margin: .5rem 1rem;
+  width: 380px;
+}
+
+.portfolio figure:hover {
+  opacity: .7;
+}
+/*not working*/
+
+.large_image {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  width: 600px;
+}
+
+.project_title {
+  margin-left: 1.5rem;
+}
+
 .relevant  {
   text-align:center;
 }
+
+.relevant figure:hover {
+  opacity: .7;
+}
+
 
 h3 {
   font-size: 25px;
   text-align: left;
 }
 
-text {
+.text {
   font-size:20px;
   line-height: 1.2;
 }
 
-main .image {
-  padding: 2rem;
+.tools {
+  margin-left: 1.5rem;
 }
+
+.detail {
+  text-align: left;
+  margin-right: 400px;
+  margin-left: 1.5rem;
+}/*inline w image, look at textbook*/
+
+.contact  { 
+  text-align: center;
+}
+
+.me {
+  float: left;
+  margin: 0 1rem 1rem 0;
+  width: 400px;
+  height: 300px;
+}/*not flowing circular*/
+
+.about {
+  text-align: left;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/*main .image {
+  padding: 2rem;
+}*/
+
+/*BUTTONS & EXTRAS*/
 
 .previous_nav {
 	text-align: left;
@@ -111,17 +249,20 @@ main .image {
   right: 1.3rem;
 }
 
-.portfolio figure:hover,
-.portfolio figure.active {
- 	color: #AE7FD1;
+/*would get rid of all underlines 
+a {
+  text-decoration: none;
 }
-/*not working*/
+*/
 
-.thumbnail {
-  display: inline-block;
+/*FOOTER*/
+
+.social {
+  width: 50px;
+  height: 50px;
 }
 
-.footer {
+footer {
   padding-bottom: 2rem;
   text-align: center;
   color: #767676;
