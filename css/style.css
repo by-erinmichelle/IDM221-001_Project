@@ -43,14 +43,14 @@ img { max-width: 100%;
   height: 100vh; 
   background: url(../photography/home_page.jpg) no-repeat;   /*not center on page*/
   background-size: cover;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .main_brand {
   font-size: 80px; /*was 150px and then suddenly got too large..not sure if its because i changed the class*/
   position: absolute;
-  margin-right: auto;
-  margin-left: auto;
-  top: 740px; /*not sitting center on image*/
+  margin-top: 180px; /*not sitting center on image*/
   width: 100%;
   z-index: 2;
   color: white;
@@ -106,11 +106,13 @@ nav-item:hover {
 
 .menu {
   opacity: 0;
+  position: absolute;
   margin-top: 3rem; 
   padding-right: 1rem;
   padding-left: 1005px;
   text-align: left;
   color: black;
+  z-index: 2;
 }
 
 .menu:hover {
@@ -175,7 +177,7 @@ figure {
 
 .large_image {
   float: right;
-  margin: 0 0 1rem 1rem;
+  margin: 0 1.5rem 1rem 1rem;
   width: 600px;
 }
 
@@ -257,13 +259,15 @@ a {
 
 /*FOOTER*/
 
-.social {
-  width: 50px;
-  height: 50px;
-}
+
 
 footer {
-  padding-bottom: 2rem;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 1280px;
   text-align: center;
   color: #767676;
+  z-index: 1;
+  background-color: white;
 }
