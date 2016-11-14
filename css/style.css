@@ -52,7 +52,7 @@ img { max-width: 100%;
   position: absolute;
   margin-top: 180px; /*not sitting center on image*/
   width: 100%;
-  z-index: 2;
+  z-index: 1;
   color: white;
   text-align: center;
 }
@@ -133,16 +133,16 @@ nav-item:hover {
   line-height: 2rem;
 }
 
-.menu ul li a:link {
+.menu li a:link {
   color: black; 
   text-decoration: none;
 }
 
-.menu ul li a:visited {
+.menu li a:visited {
   color:#AE7FD1;
 }
 
-.menu ul li a:hover {
+.menu li a:hover {
   color: #767676;
 }
 
