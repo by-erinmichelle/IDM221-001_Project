@@ -1,4 +1,3 @@
-
 * { box-sizing: border-box; }
 
 /*FONTS*/
@@ -21,11 +20,11 @@
          url('../fonts/open_sans/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 .ff-regular {
 	font-family: 'open_sansregular', Arial, sans-serif;
+  color:  #3E3C3F;
 }
 
 .container {
@@ -37,257 +36,486 @@
 img { max-width: 100%; 
 }
 
-.home_image { 
-  position: relative; 
-  width: 100%;
-  height: 100vh; 
-  background: url(../photography/home_page.jpg) no-repeat;   /*not center on page*/
-  background-size: cover;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.main_brand {
-  font-size: 80px; /*was 150px and then suddenly got too large..not sure if its because i changed the class*/
-  position: absolute;
-  margin-top: 180px; /*not sitting center on image*/
-  width: 100%;
-  z-index: 10;
-  color: white;
-  text-align: center;
-}
-
 
 /*HEADER*/
 
+.brand.col {
+    float: left;
+    width: 200px;
+    margin-left: 1.5rem;
+}
 
-/*attempting to figure out hovering for menu
+/*NAV*/
 
-nav {
-	text-align: left;
-	margin-top: 1rem;
-	padding-left: 1000px;
+.navbar {
+  width: 100%;
+}
+
+nav ul li {
   display: inline-block;
-
+  font-variant: small-caps;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-  color: #767676;
-}
-
-.nav-item{
-  opacity: 0;
-}
-
-.nav-item {
-  opacity: 0;
-}
-
-
-.hamburger:hover {
-  opacity: 1; /*works but theyre showing up off screen
-} 
-
-nav-item:hover {
-  opacity: 1;
-}*/
-
-.hamburger {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    width: 30px;
-    height: 30px;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
-/*found on https://www.sitepoint.com/pure-css-off-screen-navigation-menu/ */
-		z-index: 10;
-}
-
-.menu {
-  opacity: 0;
-  position: absolute;
-  margin-top: 3rem; 
-  padding-right: 1rem;
-  padding-left: 1005px;
-  text-align: left;
-  color: black;
-  z-index: 20;
-}
-
-.menu:hover {
-  opacity: 1;
-}
-
-.nav-item {  
-  font-size: 36px;
-  font-weight: 600;
+.navbar ul {
   list-style: none;
-  line-height: 3rem;
-} /*have to figure out how to hide items in hamburger menu*/
-
-.sub_nav-item {
-  font-size: 26px;
-  font-weight: 600;
-  list-style: none;
-  line-height: 2rem;
+  margin: 1.5rem 1.5rem 0 0;
+  text-align: right;
+  padding-left: 0;
 }
 
-.menu li a:link {
-  color: black; 
+.navbar ul li {
+  font-size: 30px;
+}
+
+.sub-navbar ul {
+  list-style: none;
+  text-align: right;  
+  margin: .5rem 0 0 52%;
+  background-color: #f3e2ff;
+  height: 3rem;
+}
+
+.sub-navbar ul li {
+  font-size: 24px;
+  margin: 0 1.5rem;
+}
+
+.navbar ul li a,
+.sub-navbar ul li a {
+  display: inline-block;
+  padding: 8px;
   text-decoration: none;
 }
 
-.menu li a:visited {
-  color:#AE7FD1;
+.un-active {
+  color: #3E3C3F;
 }
 
-.menu li a:hover {
+.current-page {
+  color: #AE7FD1;
+}/*to show what page youre on*/
+
+.navbar ul li a:hover,
+.sub-navbar ul li a:hover {
   color: #767676;
 }
+/*hover goes after visited so that visited links still hover*/
 
-.header_logo {
-	text-align: left
+/*HOME*/
+
+.home-text {
+  background-image: url(../photography/home_page.jpg);
+  width: 100%;
+  font-size: 175px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 800px;
+  height: 800px;
 }
 
-.header_title {
-	font-size: 40px;
-	text-align: center;
-} /*how do i display header title and logo inline/next to each other?*/
+.home-text a {
+  text-decoration: none;
+  color: white;
+}
 
+.navbar.home {
+  position: absolute;
+}
+
+main.home {
+  margin-top: 0;
+}
 
 /*MAIN*/
 
-.portfolio .row .col {
-  float: left;
-  /*width: 33.3%;
-  width: calc(100%/3);
-   width: ? unsure*/
+main {
+  margin-top: 3.5rem;
 }
 
-figure {
-  margin: .5rem 1rem;
+/*ABOUT ME*/
+
+.me {
+  float: left;
+  margin: 0 1rem 0 2rem;
+  width: 300px;
+  height: 300px;
+}
+
+.about {
+  text-align: left;
+  margin: 0 2rem 3rem;
+}
+
+.intro {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: .75rem;
+}
+
+.about-text {
+  line-height: 1.4rem;
+}
+
+.about-text p {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.resume {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.resume a:link {
+  color: #AE7FD1; 
+  text-decoration: none;
+}
+
+.resume a:hover {
+  color: #D7B5F0;
+}
+
+/*PORTFOLIO*/
+
+.portfolio .row {
+  margin: 0 1rem;
+  overflow: auto;
+  height: 450px;
+}
+
+.portfolio .row .col {
+  float: left;
+  width: calc(100%/4);
+}
+
+.portfolio figure {
+  margin: 0 .5rem;
+  width: 296px;
+  position: relative;
+}
+
+.portfolio figure img {
+  height: 400px;
+}
+
+.portfolio figcaption a {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  font-variant: small-caps;
+  text-decoration: none; 
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  line-height: 400px;
+  /*line height equal to height of caption centers it in image*/
+  height: 400px;
+}
+
+.portfolio figcaption.port-one a:hover {
+  background-image: url(../design/yoda-port.jpg);
+}
+
+.portfolio figcaption.port-two a:hover {
+  background-image: url(../photography/architecture14-port.jpg);
+}
+
+.portfolio figcaption.port-three a:hover {
+  background-image: url(../art/candle-port.jpg);
+}
+
+.portfolio figcaption.port-four a:hover {
+  background-image: url(../animation/toaster-port.jpg);
+}
+
+/*CONTACT*/
+
+.contact.col {
+  font-size: 24px;
+  float: left;
+  width: 45%;
+  line-height: 1.3;
+  text-align: center;
+  padding-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.arrow {
+  float: right;
+  position: absolute;
+  margin-left: 12rem;
+  width: 75px;
+}
+
+.contact-text {
+  margin-bottom: .5rem;
+  margin-top: 0;
+}
+
+.name {
+  margin-top: 2.5rem;
+}
+
+.email {
+  margin-bottom: 3rem;
+}
+
+.name, .email {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.email a:link {
+  color: #AE7FD1; 
+  text-decoration: none;
+}
+
+.email a:hover {
+  color: #D7B5F0;
+}
+
+.social {
+  margin-top: 2.5rem;
+}
+
+.social img {
+  width: 90px;
+  height: 90px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.social a {
+  padding-top: 73px;
+}
+
+/*FORM*/
+
+.form.col {
+  margin: 0 2rem;
+  padding-top: 1.5rem;
+}
+
+fieldset {
+  border: 0;
+}
+
+label {
+  color: #3E3C3F;
+  display: block;
+  line-height: 0;
+  font-size: 24px;
+  font-weight: 600;
+  font-variant: small-caps;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 5px 15px;
+  margin-bottom: 2rem;
+  color: #3E3C3F;
+  border: 2px solid #3E3C3F;
+  border-radius: 2px;
+}
+
+textarea:focus, input[type=text]:focus {
+  outline: none;
+  border: 3px solid #D7B5F0;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 5px 15px;
+  color: #3E3C3F;
+  border: 2px solid #3E3C3F;
+  border-radius: 2px;
+  resize: none;
+}
+
+input[type=submit] {
+  background-color: #AE7FD1;
+  border: none;
+  color: white;
+  padding: 4px 1rem 6px;
+  width: 100%;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 1rem 0;
+  border-radius: 2px;
+  display: block;
+  outline: none;
+}
+
+input[type=submit]:hover {
+  background-color: #D7B5F0;
+  color: #3E3C3F;
+}
+
+/*THANKS*/
+
+.thanks {
+  font-size: 100px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 0;
+}
+
+.thanks-text {
+  font-size: 36px;
+  text-align: center;
+  font-variant: small-caps;
+  margin-top: 0;
+  margin-bottom: 5rem;
+}
+
+/*PROJECTS*/
+
+.featured-projects .row {
+  margin: 0 1rem 1.8rem;
+  padding-left: 1rem;
+  overflow: auto;
+}
+
+.featured-projects .row .col {
+  float: left;
+  width: calc(100%/3);
+}
+
+.featured-projects figcaption {
+  color: white;
+  text-align: left;
+  font-variant: small-caps;
+  position: absolute;
+  padding-left: 1rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(194,159,221,0);
+  opacity: 0;
+}
+
+.featured-projects figcaption .project-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 0;
+} 
+
+.featured-projects figcaption .project-info {
+  font-size: 24px;
+  margin-top: 1rem;
+}
+
+.featured-projects figcaption:hover {
+  background-color: rgba(194,159,221,.7);
+  opacity: 1;
+}
+
+/*GRAPHIC*/
+
+.featured-graphic figure {
+  margin: 0 .5rem;
+  width: 350px;
+  position: relative;
+}
+
+.featured-graphic .xshort figcaption {
+  height: 241px;
+}
+
+.featured-graphic .short figcaption {
+  height: 350px;
+}
+
+.featured-graphic .medium figcaption {
+  height: 453px;
+}
+
+.featured-graphic .tall figcaption {
+  height: 438px;
+}
+
+.featured-graphic .xtall figcaption {
+  height: 541px;
+}
+
+/*PHOTOGRAPHY*/
+
+.featured-photography figure {
+  margin: 0 .5rem;
   width: 380px;
   position: relative;
 }
 
-figure:hover img {
-  opacity: .7;
+.featured-photography .short figcaption {
+  height: 252px;
 }
 
-figcaption {
-  font-size: 20px;
-  line-height: .5rem;
-  position: absolute;
-  opacity: 0;
-  bottom: 20px;
-  padding-left: 1rem;
+.featured-photography .tall figcaption {
+  height: 574px;
 }
 
-figure:hover figcaption{
-  opacity: 1;
+/*ART*/
+
+.featured-art figure {
+  margin: 0 .5rem;
+  width: 380px;
+  position: relative;
 }
 
-
-
-.portfolio .active {
-  overflow: auto;
+.featured-art .short figcaption {
+  height: 515px;
 }
 
+/*ANIMATION*/
 
-.large_image {
-  float: right;
-  margin: 0 1.5rem 1rem 1rem;
-  width: 600px;
+.featured-animation figure {
+  margin: 0 .5rem;
+  width: 380px;
+  position: relative;
 }
 
-.project_title {
-  margin-left: 1.5rem;
+.featured-animation .xshort figcaption {
+  height: 214px;
 }
 
-.relevant  {
-  text-align:center;
+.featured-animation .short figcaption {
+  height: 252px;
 }
-
-.relevant:hover figure {
-  opacity: .7;
-}
-
-
-h3 {
-  font-size: 25px;
-  text-align: left;
-}
-
-.text {
-  font-size:20px;
-  line-height: 1.2;/*<units*/
-}
-
-.tools {
-  margin-left: 1.5rem;
-}
-
-.detail {
-  text-align: left;
-  margin-right: 400px;
-  margin-left: 1.5rem;
-}/*inline w image, look at textbook*/
-
-.contact  { 
-  text-align: center;
-}
-
-.me {
-  float: left;
-  margin: 0 1rem 1rem 0;
-  width: 400px;
-  height: 300px;
-}/*not flowing circular*/
-
-.about {
-  text-align: left;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-/*main .image {
-  padding: 2rem;
-}*/
-
-/*BUTTONS & EXTRAS*/
-
-.previous_nav {
-	text-align: left;
-  position: absolute;
-  top: 3rem;
-  left: 1.3rem;
-}
-
-.next_nav {
-	text-align: right;
-  position: absolute;
-  top: 3rem;
-  right: 1.3rem;
-}
-
-/*would get rid of all underlines 
-a {
-  text-decoration: none;
-}
-*/
 
 /*FOOTER*/
 
-
-
-footer {
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 1280px;
+.footer {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
   text-align: center;
+  font-size: 20px;
   color: #767676;
-  z-index: 10;
   background-color: white;
+}
+
+.footer a {
+  padding-top: 2rem;
+}
+
+.footer p {
+  margin-top: .75rem;
+  margin-bottom: 0;
+}
+
+.footer.contact {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
